@@ -1,0 +1,64 @@
+﻿@using WebApplication3.Models
+@model IndexContentModel
+@{
+    ViewBag.Title = "Welcome to Sanrio's world!";
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    @Styles.Render("~/Content/Site.css")
+</head>
+
+<main>
+    <div id="three">
+        <div class="image-container">
+            <img src="~/Content/hellokitty1.jpg" alt="Lodging">
+            <div class="overlay">
+                <div class="text">
+                    The founders believed that human civilization began with rivers, such as the Tigris, Nile and Yellow Rivers, and that these rivers gave birth to the three oldest civilizations in the world.
+                    In Spanish san/is sacred, "Riol" refers to the river, so the founder took the name of the sacred river to express respect for human civilization, and then developed Sanrio Company with "Social Communication" as its corporate purpose.
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="~/Content/yellowdog1.jpg" alt="Project">
+            <div class="overlay">
+                <div class="text">The business value of Sanrio starts from the store. Customers first consume a product with a character image, and then have a cognition of the character image. But now the group is more focused from offline through social media, layout to online, regional differentiation layout. On the online front, Sanrio has also opened accounts for its characters on various platforms to better connect with customers' daily lives.</div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="~/Content/kuluomi1.jpg" alt="Species info">
+            <div class="overlay">
+                <div class="text">In line with the business philosophy that gifts convey true feelings, Sanrio is committed to the great cause of enriching interpersonal communication, giving gifts a new meaning - gifts are not only used to express respect for others, trust, love, but also become a bridge to communicate with their own inner world.Sanrio also provides spiritual relaxation and satisfaction.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="g1">
+        <p style="padding-left: 30px;"><img src="~/Content/hudiejie.png" style="height:50px;width:50px"><span class="border">Company profile</span></p>
+        <hr />
+        <div id="para">
+            <div id="accordion" style=" display: flex; flex-wrap: wrap;width:600px">
+                @foreach (var imagePath in Model.AccordionImages)
+                {
+                    <img src="@imagePath" class="accordion-img">
+                }
+            </div>
+            <p class="para">Founded in 1960, Sanrio is one of the world's leading publishers of fashion figures. Based on the business philosophy of "gifts convey true feelings", Sanrio is committed to the great cause of enriching human exchanges. Sanrio, with more than 500 portrait stars. The Sanrio brand concept is aimed at special moments and holidays, through beautiful and not cumbersome small gifts to express their feelings, so as to build and maintain mutual friendship. Sanrio's business scope is not only merchandise, but also touches every corner of people's lives, including a variety of media content, gaming products and even theme parks, to achieve our vision: "One World, Connecting Smiles".</p>
+        </div>
+    </div>
+
+    <p style="padding-left: 30px;"><img src="~/Content/hudiejie.png" style="height:50px;width:50px"><span class="border">Sanrio Family characters at a glance</span></p>
+    <hr />
+    <figure>
+        <div id="box4">
+            @foreach (var imagePath in Model.SlideImages)
+            {
+                <img src="@imagePath" class="round">
+            }
+        </div>
+    </figure>
+
+</main>

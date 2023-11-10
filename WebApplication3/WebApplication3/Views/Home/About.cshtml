@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    @Styles.Render("~/Content/Site.css")
+    @Styles.Render("~/Content/display.css")
+
+</head>
+
+
+
+<!-- First content:three introduction -->
+<p id="biaoti">Sanrio Amusement Park, Tokyo, Japan</p>
+<div class="content-row">
+    <img src="/Content/park1.PNG" class="tab1photo" style="margin:30px" />
+    <p id="content-para">Tokyo Sanrio Rainbow Land is an indoor theme park operated by Sanrio Company, featuring characters such as Hello Kitty, My Melody, Cool Penguin, Little Twin Stars and Pudding Dog. It is located in Tama City, Tokyo, Japan, and is one of the most popular theme parks in Japan. In Rainbow Land, there are many cartoon stars from the dream kingdom. The grand sound, light and work "Warm Parade Believe" will bring together these big stars! The main program is musicals and performances. "Hello Kitty's Nutcracker" features Kitty and her family on stage. The park is best known for its carnival-style parade, followed by 7 entertainment facilities,3 restaurants, 1 cafe and 4 gift shops. Here, you will have the most special experience, feel the real warmth and touching, let you linger.</p>
+</div>
+<hr style="width:1000px;margin-left:300px;" />
+<p id="biaoti">HelloKitty Paradise in Hangzhou</p>
+<div class="content-row">
+    <img src="/Content/park2.jpg" class="tab1photo" style="margin:30px" />
+    <p id="content-para">Hello Kitty and her friends call this beautiful and innocent home Hangzhou Hello Kitty Paradise and have built a square in the middle of it. Every day, the small partners will gather in this square, and you will talk about what kind of surprise you will give to the people here tomorrow. Everyone who comes here can gain friendship here. All kinds of show and float parade, Asia's first Ferris wheel slide, China's most complete HelloKitty cutie. This is Hello Kitty's first overseas home, the park covers an area of 400 acres, the park 11 sets of large-scale amusement facilities, will be happy port, sound village, spirit Forest, power connection, Hello Kitty home five areas. Kitty and her friends treat everyone who comes from afar with the most sincere warmth and friendship.</p>
+</div>
+<hr style="width:1000px;margin-left:300px;" />
+<p id="biaoti">Universal Studios Osaka Sanrio co-themed</p>
+<div class="content-row">
+    <img src="/Content/park3.jpg" class="tab1photo" style="margin:30px" />
+    <p id="content-para">Universal Studios Japan's Easter Celebration kicked off on March 10 with a parade of Minions, Sesame Street, Snoopy, Hello Kitty and more.Osaka Universal Studios Sanrio co-themed park in addition to the fairytale dream castle, indoor a variety of wonderful theme hall, there are wonderful songs and dances and gorgeous parades every day, not to forget can be with the super cute Sanrio (Sanrio) protagonist, absolutely let you take photos soft!</p>
+
+</div>
+
+
+@*Tab links*@
+<ul class="tabs">
+    <li><a href="#tab2" class="tab-link">Cultural Pop-up Shop  |</a></li>
+    <li><a href="#tab3" class="tab-link">IP Linkage  |</a></li>
+    <li><a href="#tab4" class="tab-link">Characters Co-name Food</a></li>
+</ul>
+
+
+<div id="tab2" class="tab-content">
+    <!-- The first -->
+    <img src="/Content/shop1.jpg" class="photo">
+    <img src="/Content/shop2.jpg" class="photo">
+    <img src="/Content/shop3.jpg" class="photo">
+    <img src="/Content/shop4.jpg" class="photo"><br />
+    <img src="/Content/shop5.jpg" class="photo">
+    <img src="/Content/shop6.jpg" class="photo">
+    <img src="/Content/shop7.jpg" class="photo">
+    <img src="/Content/shop8.jpg" class="photo">
+</div>
+
+<div id="tab3" class="tab-content">
+    <!-- The second -->
+    <img src="~/Content/IP1.jpg" class="photo" />
+    <img src="~/Content/IP2.jpg" class="photo" />
+    <img src="~/Content/IP3.jpg" class="photo" />
+    <img src="~/Content/IP4.jpg" class="photo" /><br />
+    <img src="~/Content/IP5.jpg" class="photo" />
+    <img src="~/Content/IP6.jpg" class="photo" />
+    <img src="~/Content/IP7.jpg" class="photo" />
+    <img src="~/Content/IP8.jpg" class="photo" />
+
+</div>
+
+<div id="tab4" class="tab-content">
+    <!-- The third -->
+    <img src="/Content/snack1.PNG" class="photo">
+    <img src="/Content/snack2.PNG" class="photo">
+    <img src="/Content/snack3.jpg" class="photo">
+    <img src="/Content/snack4.jpg" class="photo"><br />
+    <img src="/Content/snack5.jpg" class="photo">
+    <img src="/Content/snack6.jpg" class="photo">
+    <img src="/Content/snack7.jpg" class="photo">
+    <img src="/Content/snack8.jpg" class="photo">
+</div>
+
+
+
+
+@Scripts.Render("~/Scripts/TabLink.js")

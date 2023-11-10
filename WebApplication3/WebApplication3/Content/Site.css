@@ -1,0 +1,394 @@
+﻿* {
+    padding: 0;
+    margin: 0
+}
+
+html {
+    background-color: #e4f1f4;
+}
+
+#searchEngine {
+    text-align: center; 
+    margin: 0px;
+    background-color: #D080A0;
+}
+
+.searchlogo{
+    height:60px;
+    width:60px;
+}
+
+input[type="text"] {
+    width: 200px; 
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+button[type="submit"] {
+    background-color: #D080A0; 
+    color: #fae2ef;
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    margin-left: 5px; 
+    cursor: pointer; 
+}
+
+#logobox {
+    background-image:url('Sanrio.jpg');
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#logobox a:hover {
+    color: navajowhite;
+}
+
+#logobox span {
+    margin-left: 80%;
+}
+
+#three {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    position: absolute; 
+    top: 60%; 
+    left: 310px;
+    height: auto;
+    z-index: 9999;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; 
+    color: white;
+    text-align: center;
+    margin: 30px;
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+.image-container:hover .overlay {
+    display: block; 
+}
+
+#three .text {
+    color: #fff;
+    font-family: 'Comic Sans MS';
+    line-height: 1.5;
+    text-align: left;
+    padding: 20px;
+}
+
+#three img {
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 5%;
+}
+
+
+#zhusu {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease-out;
+    opacity: 0; 
+}
+
+.show-text {
+    opacity: 1;
+}
+
+#para {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 5% 15%;
+}
+
+.border {
+    border: 1.5px solid #D080A0; 
+    background-color: #d080a0;
+    border-radius:10px;
+    font-family: 'Black-Magic-2';
+    color: #eee8de;
+    font-size: 30px;
+    padding: 3px; 
+    transition: border 0.3s; 
+}
+
+.border:hover {
+    border: 1.5px solid #D080A0; 
+    background-color: #bfe5bb;
+    border-radius:10px;
+    }
+
+.para {
+    height: 30px;
+    width: 20px;
+    font-size: larger;
+    font-family: 'Comic Sans MS';
+    flex: 3;
+    line-height: 1.7;
+    padding: 13px;
+    opacity: 0; 
+    color: #D080A0; 
+    transition: opacity 0.3s; 
+}
+
+#para:hover .para {
+    opacity: 1; 
+}
+
+figure {
+    height: 300px;
+    white-space: nowrap; 
+    padding: 5px 5px;
+    padding: 50px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#box4 {
+    float: left;
+    background-color: #fae2ef;
+    display: inline-block;
+    padding: 20px 40px;
+}
+
+.round {
+    height: 200px;
+    width: 160px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+hr {
+    border: 2px solid #D080A0;
+    padding-left: 30px; 
+    margin: 10px 20px;
+    border-radius: 5px;
+}
+
+.accordion {
+    width: 200px;
+}
+
+.accordion-img {
+    height: 200px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    padding: 5px;
+    border-radius: 50%;
+    display: block;
+    margin: 5px; 
+}
+
+.accordion-img:hover {
+    height: 200px;
+    margin: auto;
+    border: 10px solid #bfe5bb;
+    border-radius: 20px;
+}
+
+#quanjiafu {
+    position: relative;
+
+}
+
+.g1 {
+    margin-top: 20%;
+    height: 700px;
+}
+
+.last {
+    background-color: #D080A0;
+    height: 180px;
+}
+
+footer p {
+    text-align: center;
+    padding: 40px;
+}
+
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url('Comic Sans MS.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bubblegum-1';
+    src: url('bubblegum-1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Black-Magic-2';
+    src: url('Black-Magic-2.ttf') format('truetype');
+}
+
+
+
+#product-page p {
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    font-family: 'bubblegum-1';
+    font-size:35px;
+    color:#D080A0;
+}
+#product-page a{
+    color:#D080A0;
+}
+#product-page a:hover {
+    color: #bfe5bb;
+}
+
+#product-page label {
+    margin-left: 300px;
+    font-family: 'Comic Sans MS';
+    padding:20px;
+}
+
+#product-page .table {
+    margin-left: 140px;
+    width: 1450px;
+    font-family: 'Comic Sans MS';
+    font-size:18px;
+    padding:20px;
+}
+
+#page {
+    margin-left: 37%;
+    font-family: 'Comic Sans MS';
+    padding: 15px;
+    font-size: 18px;
+}
+.pagination li{
+    margin:5px;
+    border:5px solid #D080A0;
+    background-color:#fae2ef;
+    border-radius:5px;
+    padding:5px;
+}
+#product-page input {
+    background-color: #D080A0; 
+    color: #fae2ef; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 3px 6px; 
+    margin-left: 5px; 
+    cursor: pointer; 
+}
+
+
+#category-page p {
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    font-family: 'bubblegum-1';
+    font-size: 35px;
+    color: #D080A0;
+}
+
+#category-page .table {
+    margin-left: 500px;
+    width: 1150px;
+    font-family: 'Comic Sans MS';
+    
+    font-size:18px;
+}
+
+#category-page a {
+    color: #D080A0;
+}
+
+#category-page a:hover {
+        color: #bfe5bb;
+}
+
+
+
+.slideshow-container {
+    display: flex;
+    overflow: hidden;
+    margin:auto;
+    max-width: 300px; 
+    
+}
+
+.grid-container {
+    display: grid;
+    width:1400px;
+    margin:auto;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    padding:50px;
+}
+
+.slide {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+
+.center {
+    flex: 2;
+    z-index: 1;
+}
+
+.slideshow-container img {
+    width: 300px;
+    height: 300px;
+    border-radius:20px;
+}
+
+#biaoti {
+    margin: 20px;
+    margin-left: 550px;
+    text-align: center;
+    width: 600px;
+    font-family: 'Comic Sans MS';
+    font-size: 25px;
+    color: #eee8de;
+    background-color: #d080a0;
+    padding: 2px; 
+    transition: border 0.3s; 
+    border-radius: 10px;
+}
+
+#biaoti:hover {
+    background-color: #bfe5bb;
+    border-radius:10px;
+}
+#content-para {
+    font-family: 'Comic Sans MS';
+    margin: 40px;
+    padding: 20px;
+    font-size: 17px;
+    width: 500px;
+    color: #d080a0;
+}

@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Welcome to Sanrio's world!</title>
+    @Styles.Render("/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+</head>
+
+    <div id="searchEngine" style="background-color: #e4f1f4;">
+    <img class="searchlogo" src="~/Content/searchlogo.png">
+    @using (Html.BeginForm("Index", "Products", FormMethod.Get, new
+    {
+        @class ="navbar-form navbar-left"
+    }))
+    {
+        <div class="form-group" style="text-align: center;margin:5px">
+            @Html.TextBox("Search", null, new
+       {
+           //@class = "form-control",
+           @placeholder = "Search Products"
+       })
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+     
+    }
+     </div>
+    <div style="background-color:#D080A0;">
+        <img src="~/Content/Sanrio.jpg" style="width: 190px; height:auto;margin-left:750px; " />
+    </div>
+<style>
+    .nav{
+        margin-left:80px;
+    }
+    .navbar-link {
+        color: #e4f1f4 !important;
+        text-decoration: none;
+        margin: 0 40px;
+       
+    }
+    .navbar-link:hover{
+        color:#fdf5c6 !important;
+    }
+</style>
+
+    <div  style="background-color: #D080A0;">
+        <nav style="background-color: #D080A0;" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark">
+            <div class="container" style="background-color: #D080A0;">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="切换导航" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="navbar-collapse collapse" style="font-family: 'Comic Sans MS';">
+                    <ul class="nav">
+                        <li>@Html.ActionLink("HOME INTRODUCTION", "Index", "Home", new { area = "" }, new { @class = "navbar-link" })</li>
+                        <li>@Html.ActionLink("JOINT PROJECT", "About", "Home", new { area = "" }, new { @class = "navbar-link" })</li>
+                        <li>@Html.ActionLink("IMAGE CATEGORY ", "Index", "Categories", new { area = "" }, new { @class = "navbar-link" })</li>
+                        <li>@Html.ActionLink("PRODUCTS DISPLAY", "Index", "Products", new { area = "" }, new { @class = "navbar-link" })</li>
+                        <li>@Html.ActionLink("INTENTION TO JOIN", "Contact", "Home", new { area = "" }, new { @class = "navbar-link" })</li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <div style="background-color: #e4f1f4; ">
+        <div id="quanjiafu">
+            <img src="~/Content/5.jpg" style="width:100%;height:100%">
+        </div>
+
+        <div style=" background-color: #e4f1f4;">
+            @RenderBody() 
+        </div>
+    </div>
+
+    <div class="last" style="height:180px;">
+        <footer>
+            <p style="padding:40px;">Any reproduction of images, photos, or other material on this site is prohibited. All copyrights owned by SANRIO CO. LTD.<br />© 2023 SANRIO CO. LTD.<br /><br />Contact by email : <a href="mailto:1336384692@qq.com"> <img src="~/Content/email.png" style="height:40px;width:40px;" /></a></p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+

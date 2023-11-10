@@ -1,0 +1,99 @@
+﻿.tabs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 50px 50px;
+}
+
+.tabs li {
+    margin-right: 0px;
+}
+
+.tabs a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 3px solid #fae2ef;
+    background-color: #fae2ef;
+    font-size: 20px;
+}
+
+.tabs a:hover {
+    background-color: #d080a0;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content:target {
+    display: block;
+}
+
+.content-row {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 50px;
+    margin-left: 300px;
+}
+
+
+.tab1photo {
+    max-width: 250px; 
+    height: auto; 
+    border-radius: 10px;
+    border: 8px solid #fae2ef;
+    margin: 50px;
+}
+
+.tab1photo:hover {
+    transform: scale(1.1); 
+    transition: transform 0.5s; 
+    border: 8px solid #d080a0;
+}
+
+#tab1 hr {
+    border: 2px dotted #D080A0;
+    margin: 70px;
+    border-radius: 5px;
+}
+
+.col-md-3 {
+    border: 1px solid #000; 
+    border-radius: 10px; 
+    margin: 7.5px; 
+    padding: 6px; 
+}
+
+.col-md-3 {
+    flex: 0 0 23.5%;
+}
+
+.image {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 150px;
+}
+
+.photo {
+    height: 15%;
+    width: 15%;
+    margin: 30px;
+    border-radius: 10px;
+    border: 8px solid #fae2ef;
+}
+
+ .photo:hover {
+    transform: scale(1.1); 
+    transition: transform 0.5s; 
+    border: 8px solid #d080a0;
+}
+
+.tab-content {
+    text-align: center;
+    margin: 50px;
+}

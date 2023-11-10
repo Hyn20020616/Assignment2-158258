@@ -1,0 +1,99 @@
+﻿@model IEnumerable<WebApplication3.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+@Styles.Render("~/Content/Site.css")
+
+<div id="category-page">
+    <p>
+        <img style="width:80px;height:80px;" src="~/Content/stra.png" />
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(item.Name, "Index", "Products", new { category = item.Name }, null)
+
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <div class="grid-container">
+        <div class="slideshow-container">
+            <div class="slide center">
+                <img src="~/Content/image1.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="~/Content/image2.png" alt="Image 2">
+            </div>
+        </div>
+
+
+        <div class="slideshow-container">
+            <div class="slide center">
+                <img src="~/Content/image3.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="~/Content/image4.png" alt="Image 2">
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="slide center">
+                <img src="~/Content/image5.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="~/Content/image6.png" alt="Image 2">
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="slide center">
+                <img src="~/Content/image7.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="~/Content/image8.png" alt="Image 2">
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="slide center">
+                <img src="~/Content/image9.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="~/Content/image10.png" alt="Image 2">
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="slide center">
+                <img src="~/Content/image11.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="~/Content/image12.png" alt="Image 2">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+@Scripts.Render("~/Scripts/ShowSlide.js")
+

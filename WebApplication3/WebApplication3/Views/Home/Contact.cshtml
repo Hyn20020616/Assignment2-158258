@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    @Styles.Render("~/Content/contact.css")
+    @Styles.Render("~/Content/Site.css")
+</head>
+
+<main>
+    <div id="body">
+        <p style="font-size: 50px; color: #d080a0;text-align: center;margin:40px;"><img src="~/Content/shop.png" style="height:6%;width:6%;" />  Joining process</p>
+        <section id="liuchengtu">
+            <div class="liucheng">
+                <div class="node">
+                    <p>Determination of intention</p>
+                    <div class="circle"><img src="~/Content/44.png" style="height:80px;width:80px"></div>
+                </div>
+                <div class="arrow"></div>
+                <div class="node">
+                    <p>Paving preparation</p>
+                    <div class="circle"><img src="~/Content/11.png" style="height:80px;width:80px"></div>
+                </div>
+                <div class="arrow"></div>
+                <div class="node">
+                    <p>Investigation and evaluation</p>
+                    <div class="circle"><img src="~/Content/66.png" style="height:80px;width:80px"></div>
+                </div>
+                <div class="arrow"></div>
+                <div class="node">
+                    <p>Contract signing</p>
+                    <div class="circle"><img src="~/Content/22.png" style="height:80px;width:80px"></div>
+                </div>
+                <div class="arrow"></div>
+                <div class="node">
+                    <p>Preparatory experience</p>
+                    <div class="circle"><img src="~/Content/55.png" style="height:80px;width:80px"></div>
+                </div>
+                <div class="arrow"></div>
+                <div class="node">
+                    <p>Start business</p>
+                    <div class="circle"><img src="~/Content/33.png" style="height:80px;width:80px"></div>
+                </div>
+            </div>
+        </section>
+
+        <p style="font-size: 50px; color: #d080a0;margin-top: 100px; text-align: center;"><img src="~/Content/haerbin.png" style="height:5%;width:5%;" />  Intention form</p>
+        <form id=contact action="URL" method="post">
+
+            <div class="form-groupc">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-groupc">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-groupc">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-groupc">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+
+            <div class="form-groupc">
+                <label for="investment">Investment fund:</label>
+                <input type="text" id="investment" name="investment" required>
+            </div>
+
+            <div class="form-groupc">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button class="button" type="submit">Submit</button>
+        </form>
+    </div>
+</main>
+
+
+
+@Scripts.Render("~/Scripts/FormSubmit.js")
+
